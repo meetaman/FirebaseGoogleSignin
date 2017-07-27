@@ -1,0 +1,98 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        tools:context="com.example.shoaib.locationtask.MapsActivity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/edit_username" />
+
+       
+
+    <Button
+        android:id="@+id/button_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="SIGN IN"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_alignLeft="@+id/edit_password"
+        android:layout_alignStart="@+id/edit_password"
+        android:layout_above="@+id/button_signup"></Button>
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/edit_password"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="numberPassword"
+        android:layout_above="@+id/button_signin"
+        android:layout_alignLeft="@+id/edit_username"
+        android:layout_alignStart="@+id/edit_username" />
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIgn up"
+        android:layout_marginBottom="43dp"
+        android:layout_above="@+id/textView_email"
+        android:layout_alignLeft="@+id/button_signin"
+        android:layout_alignStart="@+id/button_signin"
+        android:layout_alignRight="@+id/button_signin"
+        android:layout_alignEnd="@+id/button_signin" />
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/textView_signedinuser"
+        android:layout_alignStart="@+id/textView_signedinuser"
+        android:layout_alignRight="@+id/button_signup"
+        android:layout_alignEnd="@+id/button_signup" />
+
+    <TextView
+        android:id="@+id/textView_signedinuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signed in user"
+        android:textStyle="bold"
+        android:layout_above="@+id/textView_email"
+        android:layout_alignLeft="@+id/button_signup"
+        android:layout_alignStart="@+id/button_signup"
+        android:layout_alignRight="@+id/button_signup"
+        android:layout_alignEnd="@+id/button_signup" />
+
+</RelativeLayout>

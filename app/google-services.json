@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "492618540103",
+    "firebase_url": "https://locationtask-d6eef.firebaseio.com",
+    "project_id": "locationtask-d6eef",
+    "storage_bucket": "locationtask-d6eef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492618540103:android:9aafc4836da5ac13",
+        "android_client_info": {
+          "package_name": "com.example.shoaib.locationtask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492618540103-1v1i849l86q481aose00n6j3p7d9pku5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shoaib.locationtask",
+            "certificate_hash": "282180b70f10e679ba39641f3d35c414547e6d37"
+          }
+        },
+        {
+          "client_id": "492618540103-27rgbnu8tvj0fkvdbr3b6esm5g2mapnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS6k56r3CCh0WsKXIUXehkjj0-z5okGgg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492618540103-27rgbnu8tvj0fkvdbr3b6esm5g2mapnt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
