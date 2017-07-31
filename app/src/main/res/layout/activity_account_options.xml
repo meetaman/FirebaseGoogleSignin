@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+
+<TextView
+        android:id="@+id/textView_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select an option from above to proceed"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="302dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="131dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="gotoGoogleSignIn"
+        app:srcCompat="@mipmap/google"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="97dp"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/imageButton_facebook"
+        android:layout_toLeftOf="@+id/imageButton_twitter"
+        android:layout_toStartOf="@+id/imageButton_twitter"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="gotoFacebookSignIn"
+        app:srcCompat="@mipmap/facebook"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView_options"
+        android:layout_alignRight="@+id/textView_options"
+        android:layout_alignTop="@+id/imageButton_google"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        android:onClick="gotoTwitterSignIn"
+        app:srcCompat="@mipmap/twitter"
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="181dp" />
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+    <Button
+        android:id="@+id/button_fbsignout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="SignOutButton"
+        android:text="Sign Out"
+        style="@style/com_facebook_loginview_default_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/button_fbsignin"
+        android:layout_alignLeft="@+id/button_fbsignin"
+        android:layout_alignStart="@+id/button_fbsignin"
+        android:layout_alignRight="@+id/button_fbsignin"
+        android:layout_alignEnd="@+id/button_fbsignin" />
+
+    <TextView
+        android:id="@+id/textView_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="342dp" />
+
+    <TextView
+        android:id="@+id/textView_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/button_fbsignin"
+        style="@style/com_facebook_loginview_default_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:text="Log In"/>
+
+</RelativeLayout>
